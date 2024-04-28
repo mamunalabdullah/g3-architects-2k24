@@ -31,7 +31,9 @@ nav, .banner{
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
 }
+
 /* header area */
 header{
     background-color: #FFF4E7;
@@ -40,6 +42,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 50px;
 }
 .nav-title{
@@ -53,15 +56,14 @@ nav > ul{
 }
 
 nav li{
-    margin-left: 50px;
-    
+    margin-left: 50px;   
 }
 nav a{
     font-size: 18px;
     color: #424242;
 }
 .banner-content{
-    width: 70%;
+    width: 80%;
     margin: 15px auto;
     text-align: center;
 }
@@ -75,4 +77,29 @@ nav a{
     color: #727272;
     margin: 15px 0;
 }
+
+/* features area  */
+
+
+
 /* responsive area */
+@media screen and (max-width: 576px) {
+    /* header area  */
+    .banner-title{
+        font-size: 35px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav li{
+        margin-left: 20px;  
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    /* header area  */
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
