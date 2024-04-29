@@ -19,9 +19,14 @@ img{
 }
 
 /* common styles */
-nav, .banner{
+nav, .banner, .features{
     width: 80%;
     margin: 0 auto;
+}
+.description{
+    font-size: 16px;
+    color: #727272;
+    margin: 15px 0;
 }
 .btn-primary{
     border: 0;
@@ -63,7 +68,7 @@ nav a{
     color: #424242;
 }
 .banner-content{
-    width: 80%;
+    width: 70%;
     margin: 15px auto;
     text-align: center;
 }
@@ -72,14 +77,42 @@ nav a{
     color: #131313;
     font-weight: 700;
 }
-.banner-description{
-    font-size: 16px;
-    color: #727272;
-    margin: 15px 0;
-}
 
 /* features area  */
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.features-images{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.features-content{
+    width: 45%;
+}
+.feature-title{
+    font-size: 45px;
+}
+.normal{
+    color: #727272;
+    font-weight: 500;
+}
+.black{
+    color: #131313;
+    font-weight: 600;
+}
+.colorful{
+    color: #FF900E;
+    font-weight: 600;
+}
 
+/* .hide{
+    display: none;
+} */
 
 
 /* responsive area */
@@ -95,11 +128,34 @@ nav a{
     nav li{
         margin-left: 20px;  
     }
+    /* features area  */
+    .features{
+        flex-direction: column-reverse;
+    }
+    .features-images{
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .features-content{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     /* header area  */
     nav{
         flex-direction: column;
         gap: 20px;
+    }
+    /* features area  */
+    .features{
+        flex-direction: column-reverse;
+    }
+    .features-images{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .features-content{
+        width: 100%;
     }
 }
