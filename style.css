@@ -111,6 +111,7 @@ nav a{
 .features{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .features-content{
     width: 40%;
@@ -120,13 +121,28 @@ nav a{
     padding: 0 10px;
 }
 .feature{
-    padding: 15px;
-    margin: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #FFFFFF;
     box-shadow: 2px 5px 15px #727272;
     border-radius: 5px;
 }
 .features-image{
     width: 50%;
+}
+.badge{
+    color: #FFFFFF;
+    background-color: #FF900E;
+    padding: 40px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+
+}
+.badge h2{
+    font-size: 45px;
 }
 
 .hide{
@@ -200,6 +216,18 @@ footer{
         width: 100%;
     }
     /* features area  */
+    .features{
+        flex-direction: column;
+    }
+    .features-content{
+        width: 100%;
+    }
+    .features-image{
+        width: 100%;
+    }
+    .badge{
+        width: 50%;
+    }
 
     /* facts area */
     .facts-content, .sponsors-content{
@@ -229,7 +257,15 @@ footer{
         width: 100%;
     }
     /* features area  */
-    
+    .features{
+        flex-direction: column;
+    }
+    .features-content{
+        width: 100%;
+    }
+    .features-image{
+        width: 100%;
+    }
     /* facts area */
     .sponsors-images{
         flex-direction: column;
